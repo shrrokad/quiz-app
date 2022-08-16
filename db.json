@@ -1,0 +1,172 @@
+{
+  "quizdata": [
+    {
+      "QuestionID": "81f2f323-335a-4955-a118-849126085299",
+      "Question": "What is your favorite color?",
+      "option": [
+        {
+          "id": "d8846a0c-f183-41ca-877b-2ebf8c45082f",
+          "optionvalue": "Pink"
+        },
+        {
+          "id": "7f2f7437-ede5-4e7e-adb0-b3c4b0096a3c",
+          "optionvalue": "Red"
+        },
+        {
+          "id": "8f5bd728-dbac-4fef-8e9a-2b38bc59ce23",
+          "optionvalue": "Blue"
+        },
+        {
+          "id": "9ad5f1fd-7f0e-4323-b05d-1eb03071bda9",
+          "optionvalue": "Black"
+        }
+      ],
+      "Answer": "d8846a0c-f183-41ca-877b-2ebf8c45082f",
+      "id": 1
+    },
+    {
+      "QuestionID": "6b8de4dc-58c0-4ca1-92da-bcfb486a8b06",
+      "Question": "Grand Central Terminal, Park Avenue, New York is the world's",
+      "option": [
+        {
+          "id": "7b4dc1b9-95bd-4023-ad02-b085c34d0649",
+          "optionvalue": "largest railway station"
+        },
+        {
+          "id": "4352ff51-de7a-4e6d-abfd-b98586835617",
+          "optionvalue": "highest railway station"
+        },
+        {
+          "id": "02910613-02ab-4dfe-8247-bd513b6b61b4",
+          "optionvalue": "longest railway station"
+        },
+        {
+          "id": "174a5d12-442a-40e4-8123-70da10f6e774",
+          "optionvalue": "None of the above"
+        }
+      ],
+      "Answer": "7b4dc1b9-95bd-4023-ad02-b085c34d0649",
+      "id": 2
+    },
+    {
+      "QuestionID": "901412e6-f280-4dde-9889-bf87bd30eb4c",
+      "Question": "Which your favriote Food?",
+      "option": [
+        {
+          "id": "73997a3e-428b-4b27-96c7-cb6f7c6c12f9",
+          "optionvalue": "Burger"
+        },
+        {
+          "id": "0e930610-c950-4ea6-bf97-29cea4f5c384",
+          "optionvalue": "Pizza"
+        },
+        {
+          "id": "62b753da-2deb-4155-8922-fc8222138326",
+          "optionvalue": "hotdog"
+        },
+        {
+          "id": "a377988e-1800-496d-8cd3-dae20b627960",
+          "optionvalue": "Alupuri"
+        }
+      ],
+      "Answer": "62b753da-2deb-4155-8922-fc8222138326",
+      "id": 3
+    },
+    {
+      "QuestionID": "63ea8a20-d20f-45ba-9109-0f9c4d0f843b",
+      "Question": "Which your favorite Movie?",
+      "option": [
+        {
+          "id": "57d4baad-ed5c-47ee-b63e-69fbc5b9b40c",
+          "optionvalue": "Horrore Movie"
+        },
+        {
+          "id": "072a4025-9960-46f4-9518-e2515e79c11d",
+          "optionvalue": "BollyWood Movie"
+        },
+        {
+          "id": "59af8cbd-c7dd-41bf-92a2-e46e7750e741",
+          "optionvalue": "South Movie"
+        },
+        {
+          "id": "2967f3f8-d917-4290-8728-88800563804c",
+          "optionvalue": "None of the Above"
+        }
+      ],
+      "Answer": "072a4025-9960-46f4-9518-e2515e79c11d",
+      "id": 4
+    },
+    {
+      "QuestionID": "52206c78-062f-4fdc-a2e8-9284dfa3d8f5",
+      "Question": "which Your Favirote Sports?",
+      "option": [
+        {
+          "id": "71ee5f8d-3287-4477-9f9d-22ad1b57db04",
+          "optionvalue": "Cricket"
+        },
+        {
+          "id": "4a11c9d7-c328-4810-b18b-a00152233ac7",
+          "optionvalue": "Kho-Kho"
+        },
+        {
+          "id": "058e2529-6c52-4476-95ef-42634f98239f",
+          "optionvalue": "Kabbdi"
+        },
+        {
+          "id": "8c9e4d6f-6ddc-488e-9349-253657595d5d",
+          "optionvalue": "Hocky"
+        }
+      ],
+      "Answer": "71ee5f8d-3287-4477-9f9d-22ad1b57db04",
+      "id": 5
+    },
+    {
+      "QuestionID": "a34fd342-460d-4128-8455-b715719cde33",
+      "Question": "How many days are there in a week?",
+      "option": [
+        {
+          "id": "46228e61-1fdb-42f5-83f1-608f5ac470b2",
+          "optionvalue": "7"
+        },
+        {
+          "id": "01d0c0d4-f8b3-427c-ab2e-7a83de19601f",
+          "optionvalue": "1"
+        },
+        {
+          "id": "8ad0b847-2653-4c27-9667-87ed16dec2ce",
+          "optionvalue": "5"
+        },
+        {
+          "id": "2511a844-5946-4230-adc0-4178c12df237",
+          "optionvalue": "6"
+        }
+      ],
+      "Answer": "46228e61-1fdb-42f5-83f1-608f5ac470b2",
+      "id": 6
+    },
+    {
+      "QuestionID": "377a7870-b782-438f-8bdb-6b97c7450ed5",
+      "Question": "which your faviriote car?",
+      "option": [
+        {
+          "id": "b476e715-0354-425f-a9bc-9c909bd614f4",
+          "optionvalue": "Verna"
+        },
+        {
+          "id": "11b44a61-b4d1-437c-bb00-12f9e676cf52",
+          "optionvalue": "Props"
+        },
+        {
+          "id": "1e63ea9e-178c-460e-9b6f-5a35ac66f2a4",
+          "optionvalue": "Jaguar"
+        },
+        {
+          "id": "ce7a0033-863f-4e7d-9d9a-07c0b58ec2df",
+          "optionvalue": "Kiva"
+        }
+      ],
+      "Answer": "ce7a0033-863f-4e7d-9d9a-07c0b58ec2df",
+      "id": 7
+    }
+  ]
+}
