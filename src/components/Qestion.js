@@ -52,7 +52,7 @@ const Qestion = () => {
     const { optionvalue4 } = optionv4
 
     const handleChange = (e) => {
-        setQestion({ ...qestion, QuestionID:uuidv4(),  [e.target.name]: e.target.value })
+        setQestion({ ...qestion, QuestionID: uuidv4(), [e.target.name]: e.target.value })
     }
 
     const handleChangevalue1 = (e) => {
@@ -75,7 +75,7 @@ const Qestion = () => {
 
 
     const handelsubmit = (e) => {
-        if(!Answer){
+        if (!Answer) {
             e.preventDefault()
             return toast.error("Please Select your answer !", {
                 position: toast.POSITION.TOP_LEFT
@@ -85,11 +85,11 @@ const Qestion = () => {
             return toast.error("Please Fill all Field !", {
                 position: toast.POSITION.TOP_LEFT
             });
-        } 
+        }
         qestion.option.push(optionv1, optionv2, optionv3, optionv4)
         dispatch(SENDDATA(qestion))
         navigatore('/Qestion')
-       
+
     }
 
     const [button, setButton] = useState(false)
@@ -114,34 +114,40 @@ const Qestion = () => {
 
     return (
         <>
-            <div className="d-flex justify-content-center w-100">
-                <Form className='mt-5' onSubmit={(e) => handelsubmit(e)}>
-                    <div className="input-area mt-3">
-                        <input type="text" name="Question" id="Question" value={Question} placeholder="Enter Your question" autoComplete="off" onChange={(e) => handleChange(e)} />
-                    </div>
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                        <div className="w-100 h-100">
+                            <Form className='mt-5' onSubmit={(e) => handelsubmit(e)}>
+                                <div className="input-area mt-3">
+                                    <input type="text" name="Question" id="Question" value={Question} placeholder="Enter Your question" className='form-control' autoComplete="off" onChange={(e) => handleChange(e)} />
+                                </div>
 
-                    <div>
-                        <div className={"input-area mt-3"}>
-                            <input onClick={colorechange} type="radio" className='radioinput' id="html" name="Answer" value={optionv1.id} onChange={(e) => handleChange(e)} />
-                            <input className={'toggle-btn ' + (button ? 'toggle-cbtn' : '')} type="text" name="optionvalue" id="optionvalue" value={optionvalue1} placeholder="Enter option1" autoComplete="off" style={{ marginLeft: "10px" }} onChange={(e) => handleChangevalue1(e)} />
-                        </div>
-                        <div className="input-area mt-3">
-                            <input onClick={colorechange1} type="radio" id="html" name="Answer" value={optionv2.id} onChange={(e) => handleChange(e)} />
-                            <input className={'toggle-btn ' + (button1 ? 'toggle-cbtn' : '')} type="text" name="optionvalue" id="optionvalue" value={optionvalue2} placeholder="Enter option2" autoComplete="off" style={{ marginLeft: "10px" }} onChange={(e) => handleChangevalue2(e)} />
-                        </div>
-                        <div className="input-area mt-3">
-                            <input onClick={colorechange2} type="radio" id="html" name="Answer" value={optionv3.id} onChange={(e) => handleChange(e)} />
-                            <input className={'toggle-btn ' + (button2 ? 'toggle-cbtn' : '')} type="text" name="optionvalue" id="optionvalue" value={optionvalue3} placeholder="Enter option3" autoComplete="off" style={{ marginLeft: "10px" }} onChange={(e) => handleChangevalue3(e)} />
-                        </div>
-                        <div className="input-area mt-3">
-                            <input onClick={colorechange3} type="radio" id="html" name="Answer" value={optionv4.id} onChange={(e) => handleChange(e)} />
-                            <input className={'toggle-btn ' + (button3 ? 'toggle-cbtn' : '')} type="text" name="optionvalue" id="optionvalue" value={optionvalue4} placeholder="Enter option4" autoComplete="off" style={{ marginLeft: "10px" }} onChange={(e) => handleChangevalue4(e)} />
+                                <div>
+                                    <div className="input-area d-flex align-item-center mt-3">
+                                        <input onClick={colorechange} type="radio" className='radioinput' id="html" name="Answer" value={optionv1.id} onChange={(e) => handleChange(e)} />
+                                        <input className={(button ? 'toggle-cbtn' : 'form-control')} type="text" name="optionvalue" id="optionvalue" value={optionvalue1} placeholder="Enter option1" autoComplete="off" style={{ marginLeft: "10px" }} onChange={(e) => handleChangevalue1(e)} />
+                                    </div>
+                                    <div className="input-area d-flex align-item-center mt-3">
+                                        <input onClick={colorechange1} type="radio" id="html" name="Answer" value={optionv2.id} onChange={(e) => handleChange(e)} />
+                                        <input className={(button1 ? 'toggle-cbtn' : 'form-control')} type="text" name="optionvalue" id="optionvalue" value={optionvalue2} placeholder="Enter option2" autoComplete="off" style={{ marginLeft: "10px" }} onChange={(e) => handleChangevalue2(e)} />
+                                    </div>
+                                    <div className="input-area d-flex align-item-center mt-3">
+                                        <input onClick={colorechange2} type="radio" id="html" name="Answer" value={optionv3.id} onChange={(e) => handleChange(e)} />
+                                        <input className={(button2 ? 'toggle-cbtn' : 'form-control')} type="text" name="optionvalue" id="optionvalue" value={optionvalue3} placeholder="Enter option3" autoComplete="off" style={{ marginLeft: "10px" }} onChange={(e) => handleChangevalue3(e)} />
+                                    </div>
+                                    <div className="input-area d-flex align-item-center mt-3">
+                                        <input onClick={colorechange3} type="radio" id="html" name="Answer" value={optionv4.id} onChange={(e) => handleChange(e)} />
+                                        <input className={(button3 ? 'toggle-cbtn' : 'form-control')} type="text" name="optionvalue" id="optionvalue" value={optionvalue4} placeholder="Enter option4" autoComplete="off" style={{ marginLeft: "10px" }} onChange={(e) => handleChangevalue4(e)} />
+                                    </div>
+                                </div>
+                                <div className='mt-3 d-flex justify-content-center'>
+                                    <input className="btn btn-dark" type="submit" value="Submit" />
+                                </div>
+                            </Form>
                         </div>
                     </div>
-                    <div className='mt-3 d-flex justify-content-center'>
-                        <input className="btn btn-dark" type="submit" value="Submit" />
-                    </div>
-                </Form>
+                </div>
             </div>
 
             <ToastContainer />
