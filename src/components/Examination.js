@@ -124,9 +124,9 @@ const Examination = () => {
 
 
     const priviousdata = () => {
-        const qid = apidata == undefined ? console.log("error") : apidata[count].QuestionID
-        const aid = getData1.find((data) => data.id == qid)
-        if (answerid == undefined) {
+        const qid = apidata == undefined ? "" : apidata[count].QuestionID
+        const aid = getData1.find((data) => data.id === qid)
+        if (aid) {
             setAnswerid(aid)
         } else {
             setAnswerid({id : qid, answervalue: ""})

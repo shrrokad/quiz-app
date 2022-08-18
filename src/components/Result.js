@@ -56,8 +56,10 @@ const Result = () => {
         }
         setScore(newscore.length)
         setWscore(Wrong.length)
-    }
 
+    }
+    
+    const result = apidata.length - score
 
     return (
         <div>
@@ -75,7 +77,7 @@ const Result = () => {
                             <p>Right Answer : <b>{score}</b></p>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 border">
-                            <p>wrong Answer: <b>{apidata.length - score}</b></p>
+                            <p>wrong Answer: <b>{result - wscore}</b></p>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 border">
                             <p>Empty Answer: <b>{wscore}</b></p>
