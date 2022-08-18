@@ -75,17 +75,17 @@ const Qestion = () => {
 
 
     const handelsubmit = (e) => {
-        // e.preventDefault()
+        if(!Answer){
+            e.preventDefault()
+            return toast.error("Please Select your answer !", {
+                position: toast.POSITION.TOP_LEFT
+            });
+        }
         if (!Question && !optionvalue1 && !optionvalue2 && !optionvalue3 && !optionvalue4) {
             return toast.error("Please Fill all Field !", {
                 position: toast.POSITION.TOP_LEFT
             });
         } 
-        // if(!qestion.Answer){
-        //     return toast.error("Please Select your answer !", {
-        //         position: toast.POSITION.TOP_LEFT
-        //     });
-        // }
         qestion.option.push(optionv1, optionv2, optionv3, optionv4)
         dispatch(SENDDATA(qestion))
         navigatore('/Qestion')
